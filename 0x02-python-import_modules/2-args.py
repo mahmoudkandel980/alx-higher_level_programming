@@ -4,11 +4,15 @@ if __name__ == "__main__":
     import sys
 
     counter = len(sys.argv) - 1
-    elif counter == 1:
-        print("1 argument:")
     if counter == 0:
-        print("0 arguments.")
+        print("{:d} argument.".format(counter))
+        return
     else:
-        print("{} arguments:".format(counter))
-    for i in range(counter):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+        if counter == 1:
+            print("{:d} argument:".format(counter))
+        else:
+            print("{:d} arguments:".format(counter))
+        i = 1
+        while i <= counter:
+            print("{:d}: {:s}".format(i, argv[i]))
+            i += 1
