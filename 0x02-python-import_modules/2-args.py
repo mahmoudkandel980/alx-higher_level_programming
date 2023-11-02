@@ -2,7 +2,6 @@
 
 if __name__ == "__main__":
     import sys
-
     counter = len(sys.argv) - 1
     if counter == 0:
         print("{:d} argument.".format(counter))
