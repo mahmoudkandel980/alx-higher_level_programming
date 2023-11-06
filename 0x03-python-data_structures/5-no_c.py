@@ -9,4 +9,4 @@ def no_c(my_string):
             pass
         else:
             newString = newString + j
-    return new_string
+    return newString
